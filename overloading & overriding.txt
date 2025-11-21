@@ -1,0 +1,36 @@
+package nov19;
+
+public class SECONDCLASS {
+	public static void main(String[] args) {
+		MathOperation math= new MathOperation();
+		math.add(3, 5);
+		math.add(2, 5,5);
+		math.add(3, 4,5);
+		Honda h= new Honda();
+		h.run();
+		
+
+
+	}
+}\\overloading
+class MathOperation{
+	void add(int a,int b){
+	 System.out.println("Sum:"+(a+b));
+	}
+	void add(double a,int b){
+	 System.out.println("Sum:"+(a+b));
+	}
+	void add(int a,int b,int c){
+	 System.out.println("Sum:"+(a+b+c));
+	}
+}\\overriding
+class Bike{
+	void run(){
+		System.out.println("Bike is Running");
+	}
+}
+class Honda extends Bike{
+	void run(){
+		System.out.println("Honda bike is running smoothly");
+	}
+}

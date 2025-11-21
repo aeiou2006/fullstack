@@ -1,0 +1,37 @@
+package nov19;
+import java.util.Scanner;
+public class TRYCAT {
+	public static void main(String[] args){
+		Scanner s= new Scanner(System.in);
+try{
+	System.out.println("Enter the number a");
+	int a=s.nextInt();
+	System.out.println("Enter the number b");
+	int b=s.nextInt();
+	System.out.println("output is:"+(a/b));	
+	int []array={10,20,30,40,50};
+	System.out.println("Enter a index");
+	int c=s.nextInt();
+	System.out.println(array[c]);
+}
+catch(ArithmeticException e){
+	System.out.println("you did a small mistake:");
+	System.out.println("Enter the number a");
+	int a=s.nextInt();
+	System.out.println("Enter the number b");
+	int b=s.nextInt();
+	System.out.println("output is:"+(a/b));	
+}
+catch(ArrayIndexOutOfBoundsException f){
+	System.out.println("enter another input");
+	int []array={10,20,30,40,50};
+	System.out.println("Enter a index");
+	int c=s.nextInt();
+	System.out.println(array[c]);
+	
+}
+finally{
+	System.out.println("Thank you ....");
+}
+}
+}
