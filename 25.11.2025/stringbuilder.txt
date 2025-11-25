@@ -1,0 +1,27 @@
+package nov19;
+
+public class STRINGBUILDER {
+	public static void main(String args[]){
+		StringBuilder sb=new StringBuilder("Hello ");
+		sb.append("Python");
+		System.out.println(sb);
+		
+		StringBuilder sb1=new StringBuilder("Hello ");
+		sb1.insert(3,"Python");
+		System.out.println(sb1);
+		
+		StringBuilder sb2=new StringBuilder("Hello");
+		sb2.replace(1,4,"Python");
+		System.out.println(sb2);
+		
+		StringBuilder sb3=new StringBuilder("Hello");
+		sb3.delete(2,4);
+		System.out.println(sb3);
+		
+		StringBuilder sb4=new StringBuilder("Muthu");
+		sb4.reverse();
+		System.out.println(sb4);
+			
+			
+			}
+}

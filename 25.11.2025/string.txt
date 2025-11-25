@@ -1,0 +1,44 @@
+package nov19;
+
+public class STRING {
+	public static void main(String args[]){
+		String s="Ganasri";
+		System.out.println(s.toUpperCase());
+		System.out.println(s.toLowerCase());
+		System.out.println(s);
+		
+		String s1="Muthulakshmi";
+		s1=s1.concat("Muthusamy");
+		System.out.println(s1);
+		StringBuffer s2=new StringBuffer("Narmatha");
+		s2=s2.append("Muthusamy");
+		System.out.println(s2);
+		StringBuilder s3=new StringBuilder("Shalini");
+		s3=s3.append("Muthusamy");
+		System.out.println(s3);
+		
+		String s4=" Malar ";
+		System.out.println(s4);
+		System.out.println(s4.trim());
+        
+                String s5="Gayathiri";
+                if(s5.startsWith("Ga")){
+        	System.out.println("True");
+                }
+               else{
+        	System.out.println("False");
+                }
+        
+              String s6="Muthulakshmi";
+              System.out.println(s6.charAt(0));
+              System.out.println(s6.charAt(3));
+        
+        
+              String s7="Muthulakshmi";
+              System.out.println(s7.length());
+
+              String s8="Java is programming language";
+              String replaceString=s8.replace("Java","Python");
+              System.out.println(replaceString);
+}
+}

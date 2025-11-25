@@ -1,0 +1,33 @@
+package nov19;
+
+import java.util.Arrays;
+
+import org.apache.commons.lang3.ArrayUtils;
+
+import com.sun.xml.internal.ws.util.StringUtils;
+
+public class ARRAY {
+	public static void main(String args[]) {
+       int[] intArray={1,2,3,4,5};
+       int[] intArray2={6,7,8,9,10};
+       int a[]=ArrayUtils.addAll(intArray,intArray2);
+       String s= Arrays.toString(a);
+       System.out.println(s);
+       
+       int[] intArray3={1,2,3,4,5};
+       String intArray3String=Arrays.toString(intArray3);
+       System.out.println(intArray3);
+       System.out.println(intArray3String);
+       
+       String[] stringArray = { "abc", "bcd", "cba", "dcb", "efg" };
+       boolean b = Arrays.asList(stringArray).contains("abc");
+       System.out.println(b);
+       
+       int[] intArray1 = { 1, 2, 3, 4, 5 };
+       ArrayUtils.reverse(intArray1);
+       System.out.println(Arrays.toString(intArray1));
+       
+
+       
+	}
+}
