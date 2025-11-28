@@ -1,0 +1,49 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Arraylist123 {
+
+	public static void main(String args[]){
+		ArrayList<String> list=new ArrayList<String>();
+		list.add("Pavi");
+		list.add("Kavi");
+		System.out.println(list);
+		list.add("Priya");
+		System.out.println(list);
+		System.out.println(list.get(1));
+		
+		
+		ArrayList<Integer> list1=new ArrayList<Integer>();
+		list1.add(1001);
+		list1.add(1002);
+		System.out.println(list1);
+		
+		ArrayList<Character> chr=new ArrayList<Character>();
+		chr.add('m');
+		chr.add('v');
+		System.out.println(chr);
+		 
+		ArrayList<Boolean> bool=new ArrayList<Boolean>();
+	        bool.add(true);
+	        System.out.println(bool);
+	    
+	        long startTime = System.currentTimeMillis();  
+                ArrayList<String> list2=new ArrayList<String>();
+                for (int i=0; i<10000; i++){  
+        	list2.add("Ravi");   
+        }  
+                System.out.println("Time taken by ArrayList: " +
+               (System.currentTimeMillis() - startTime) + "ms");  
+
+                long startTime1 = System.currentTimeMillis();  
+                LinkedList<String> list3=new LinkedList<String>();
+                for (int i=0; i<10000; i++){  
+        	list3.add("Ravi");   
+        }  
+                System.out.println("Time taken by LinkedList: " +
+               (System.currentTimeMillis() - startTime1) + "ms");  
+        
+}
+}

@@ -1,0 +1,36 @@
+package collection;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
+
+
+public class Set {
+	public static void main(String args[]){
+		HashSet<String> set=new HashSet<String>();  
+		set.add("Rahu");  
+		set.add("Vishal");  
+		Iterator<String> itr=set.iterator();  
+		while(itr.hasNext()){  
+		System.out.println(itr.next());
+		
+		LinkedHashSet<String> set1=new LinkedHashSet<String>();
+		set1.add("Janu");
+		set1.add("Subbu");
+		Iterator<String> itr1=set1.iterator();  
+		while(itr1.hasNext()){  
+		System.out.println(itr1.next());
+		 
+		TreeSet<String> set2=new TreeSet<String>();
+		set2.add("Arul");
+		set2.add("Mathesh");
+		Iterator<String> itr2=set2.iterator();  
+		while(itr2.hasNext()){  
+		System.out.println(itr2.next());
+	
+		}
+	}
+}
+	}
+}
